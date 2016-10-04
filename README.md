@@ -60,10 +60,10 @@ the regex "(A|C|G|T)". The bottleneck here is the regular expression search, whi
 is looking at each character and checking whether it matches one of four characters.
 
 Design wise, the main components are:
-1. analyze_sequence.py: script run from command line
-2. efetch.py: contains a function that retrieves XML from NCBI and streams it to a file
-3. sequence_extractor.py: class that extracts the sequence from the XML and writes it
-   to a temp file.
+ 1. analyze_sequence.py: script run from command line
+ 2. efetch.py: contains a function that retrieves XML from NCBI and streams it to a file
+ 3. sequence_extractor.py: class that extracts the sequence from the XML and writes it
+    to a temp file.
 
 Obviously for production code, I would add things such as error handling, logging,
 and unit tests, but this gives you some idea of my coding style.
